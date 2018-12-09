@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncollie <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ncollie <ncollie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/02 17:42:17 by ncollie           #+#    #+#             */
-/*   Updated: 2018/12/08 17:50:00 by ncollie          ###   ########.fr       */
+/*   Updated: 2018/12/08 18:30:20 by ncollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <fcntl.h>
 #include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
 #define HAS_NEWLINE_CHAR ((here) = (ft_strchr(hash[fd],'\n')))
 #define SET_LINE *line = ft_strdup(hash[fd])
