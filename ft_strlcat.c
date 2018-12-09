@@ -6,12 +6,12 @@
 /*   By: ncollie <ncollie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/03 16:01:24 by ncollie           #+#    #+#             */
-/*   Updated: 2018/12/06 18:01:46 by ncollie          ###   ########.fr       */
+/*   Updated: 2018/12/08 18:34:53 by ncollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <strings.h>
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
