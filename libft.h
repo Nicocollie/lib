@@ -6,14 +6,13 @@
 /*   By: ncollie <ncollie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/10 19:27:28 by ncollie           #+#    #+#             */
-/*   Updated: 2018/12/08 18:25:14 by ncollie          ###   ########.fr       */
+/*   Updated: 2018/12/08 18:28:42 by ncollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
-# include "get_next_line.h"
 # define BUFF_SIZE 1
 
 typedef struct		s_list
