@@ -6,7 +6,7 @@
 #    By: ncollie <ncollie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/12 10:10:25 by ncollie           #+#    #+#              #
-#    Updated: 2018/12/08 17:24:12 by ncollie          ###   ########.fr        #
+#    Updated: 2018/12/08 18:16:15 by ncollie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ $(NAME): $(OBJECTS)
 	ranlib $(NAME)
 
 %.o: %.c
-	gcc -Wall -Werror -Wextra -I includes/ -c $< -o $@
+	gcc -Wall -Werror -Wextra -I. -c $< -o $@
 
 
 clean:
