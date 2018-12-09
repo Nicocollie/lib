@@ -6,7 +6,7 @@
 /*   By: ncollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/02 17:42:17 by ncollie           #+#    #+#             */
-/*   Updated: 2018/11/05 17:39:13 by ncollie          ###   ########.fr       */
+/*   Updated: 2018/12/08 17:50:00 by ncollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 #define SET_NULL_CHAR (*here) = ('\0')
 #define NOTHING_TO_READ read_amount == 0 && (hash[fd] == NULL || !*hash[fd])
 
-int		return_line(const int fd, char **line, char **hash)
+static int		return_line(const int fd, char **line, char **hash)
 {
 	char	*here;
 	int		length;
@@ -40,14 +40,14 @@ int		return_line(const int fd, char **line, char **hash)
 	return (1);
 }
 
-void	useless_function(int fd, char **other, char **hash)
+static void		useless_function(int fd, char **other, char **hash)
 {
 	*other = malloc(sizeof(char));
 	**other = '\0';
 	hash[fd] = *other;
 }
 
-int		get_next_line(const int fd, char **line)
+int				get_next_line(const int fd, char **line)
 {
 	static char	*hash[4864];
 	char		buf[BUFF_SIZE + 1];
