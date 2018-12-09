@@ -6,7 +6,7 @@
 /*   By: ncollie <ncollie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/10 19:27:28 by ncollie           #+#    #+#             */
-/*   Updated: 2018/12/08 17:45:17 by ncollie          ###   ########.fr       */
+/*   Updated: 2018/12/08 18:25:14 by ncollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <string.h>
 # include "get_next_line.h"
+# define BUFF_SIZE 1
 
 typedef struct		s_list
 {
@@ -22,6 +23,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+int					get_next_line(const int fd, char **line);
 void				ft_strdel(char **as);
 size_t				ft_strlen(const char *s);
 void				*ft_memset(void	*ptr, int value, int size);
